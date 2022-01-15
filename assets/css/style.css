@@ -276,14 +276,15 @@ ul {
 
 .popular_area>.item h3 {
     color: #000;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 500;
+    margin-top: 2rem;
 }
 
 .popular_area>.item h4 {
     padding-top: 1rem;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 25px;
     color: #000;
 }
 
