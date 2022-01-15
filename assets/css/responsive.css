@@ -1,0 +1,68 @@
+@media screen and (max-width:991px) {
+    /*MOBILE MENU nav-menu Styling */
+    .menu-btn {
+        display: block;
+        z-index: 9999;
+        color: #000;
+    }
+    .header_section {
+        padding: 10px 15px;
+        display: block;
+        position: relative;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .header_section .menu {
+        position: absolute;
+        display: block;
+        left: -108%;
+        height: 100vh;
+        transition: .5s ease-in;
+        top: 100%;
+        background: #fbfbfb;
+        width: 100%;
+    }
+    .header_section .menu.active {
+        left: 0px;
+        padding-top: 0rem;
+    }
+    .header_section .item .menu {
+        display: block;
+        width: 100%;
+    }
+    .header_section .item .menu>li>a {
+        padding: 1rem 15px;
+        display: block;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .influencer_section .item {
+        flex-basis: 90%;
+        margin-top: 2rem;
+    }
+    .client {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .client .item {
+        padding-bottom: 2rem;
+    }
+    .popular_area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .newsletter input,
+    .newsletter button {
+        width: 95%;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .popular_area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .client {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
